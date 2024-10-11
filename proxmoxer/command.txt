@@ -1,0 +1,8 @@
+ curl -k -d 'username=root@pam' --data-urlencode 'password=cyb3rbully' https://192.168.1.107:8006/api2/json/access/ticket
+
+generate csrf and ticket-cookie
+
+
+curl  --insecure --cookie "$(<cookie)" https://192.168.1.107:8006/api2/json/nodes/innprox/status | jq '.'
+
+using the generate csrf toke and cookie stored in file run the api

@@ -1,0 +1,17 @@
+ID
+
+root@pam!testtoken
+
+bc2d3d12-edfc-45bd-9b30-c3f8abb1427c
+
+
+ curl -k -d 'username=root@pam' --data-urlencode 'password=cyb3rbully' https://192.168.1.107:8006/api2/json/access/ticket
+{"data":{"CSRFPreventionToken":"67050C78:yjUtt1Gk3XUcl1336vAZYTDG5UgmBGA0aGY/3ju52eU","username":"root@pam","ticket":"PVE:root@pam:67050C78::AGCjImRVJQFGmw2dJJeJviwFpl613D3bbbHEYXtWKjbNMGLXSTkIK2amulxrM42HhL/HAQY1HOADZqLCMiOlGAHcDgUImJKi621rMPpdDe4y2cRE0vk5foBqaJg0DJ9DXbFUU/WV+bQ2vvKErD+MeJgm3Mo7FD9ablKdewLGzeEJL9GR7bEAY+e/MP1YVigSUJVyBKpiQzUl0bKbZ4k+umcGg2OFOx+XryvHzvLIqHd04EBOh854LMn1XMKKNXvYrQmf0VrbbfoPuyrNwfaVD5MPelCCMr84zJaXhJPvDPU1PcYW7oVfqxjFb8OlhbcbGf+qEDLVmb7lDEokegtpQg==","cap":{"vms":{"VM.PowerMgmt":1,"VM.Monitor":1,"VM.Config.Options":1,"VM.Config.Memory":1,"VM.Allocate":1,"VM.Console":1,"VM.Config.CDROM":1,"VM.Backup":1,"VM.Config.CPU":1,"Permissions.Modify":1,"VM.Snapshot.Rollback":1,"VM.Migrate":1,"VM.Config.Disk":1,"VM.Clone":1,"VM.Config.Cloudinit":1,"VM.Config.HWType":1,"VM.Snapshot":1,"VM.Audit":1,"VM.Config.Network":1},"sdn":{"SDN.Use":1,"SDN.Allocate":1,"SDN.Audit":1,"Permissions.Modify":1},"storage":{"Datastore.Audit":1,"Datastore.AllocateTemplate":1,"Permissions.Modify":1,"Datastore.Allocate":1,"Datastore.AllocateSpace":1},"mapping":{"Mapping.Audit":1,"Mapping.Use":1,"Mapping.Modify":1,"Permissions.Modify":1},"nodes":{"Sys.AccessNetwork":1,"Sys.Syslog":1,"Sys.Console":1,"Sys.Audit":1,"Sys.PowerMgmt":1,"Permissions.Modify":1,"Sys.Modify":1,"Sys.Incoming":1},"access":{"Group.Allocate":1,"Permissions.Modify":1,"User.Modify":1},"dc":{"SDN.Use":1,"Sys.Modify":1,"Sys.Audit":1,"SDN.Audit":1,"SDN.Allocate":1}}}}
+
+
+
+NEw
+
+
+curl -k -d 'username=root@pam' --data-urlencode 'password=cyb3rbully' https://192.168.1.107:8006/api2/json/access/ticket
+{"data":{"CSRFPreventionToken":"67061716:iWONLSQ0Fi1hkgQAriC7uOjNDE2IQcW+5sZ0wLFxNGg","username":"root@pam","ticket":"PVE:root@pam:67061716::go6UEn3GkCNESm42vOz9rNMjLH3gshbqKP6kqe4h6KgqhcFHqpUyI0yO6AwIMNnm68elv5xNCoxPti4EA2BnfE74Z/nncJaUTN95I/N7EixGcM69TcyZANogNhfo/mGpknlJ1y+wn3UnqXfZJaKWWqEBSFiBXw6qmpGkjImuqUXNBF5OGPin074KTNPU0OPr097H2gak3yXaBJ0QKEJ7XyTF1fJARKHubmdGX/RgIdZ6yaiCTZwK7nAQ4SLetMSuV0h9CMendQnJOkU/D7rZFBc2Wy54eghaQ5rE9lYpDj9Fbcm5gouSCNezvZygIeKv7nD2BQlbwBM507OmNUOeSQ==","cap":{"access":{"Permissions.Modify":1,"User.Modify":1,"Group.Allocate":1},"storage":{"Datastore.Allocate":1,"Datastore.AllocateTemplate":1,"Datastore.Audit":1,"Permissions.Modify":1,"Datastore.AllocateSpace":1},"sdn":{"SDN.Allocate":1,"SDN.Audit":1,"SDN.Use":1,"Permissions.Modify":1},"mapping":{"Mapping.Use":1,"Mapping.Audit":1,"Permissions.Modify":1,"Mapping.Modify":1},"nodes":{"Sys.PowerMgmt":1,"Sys.Console":1,"Sys.Syslog":1,"Sys.AccessNetwork":1,"Sys.Incoming":1,"Sys.Modify":1,"Sys.Audit":1,"Permissions.Modify":1},"dc":{"Sys.Audit":1,"Sys.Modify":1,"SDN.Allocate":1,"SDN.Audit":1,"SDN.Use":1},"vms":{"VM.Config.Network":1,"VM.Audit":1,"VM.Config.Cloudinit":1,"VM.Config.Options":1,"VM.Migrate":1,"VM.Config.HWType":1,"Permissions.Modify":1,"VM.Config.CPU":1,"VM.PowerMgmt":1,"VM.Monitor":1,"VM.Backup":1,"VM.Snapshot.Rollback":1,"VM.Config.CDROM":1,"VM.Config.Disk":1,"VM.Clone":1,"VM.Console":1,"VM.Config.Memory":1,"VM.Allocate":1,"VM.Snapshot":1}}}}
