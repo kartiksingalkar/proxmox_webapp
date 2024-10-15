@@ -95,18 +95,24 @@ def firewall_show():
     """ Show firewall rules for a specific VM. """
     rules = []
     if request.method == 'POST':
-        node = request.form['node']
-        vmid = request.form['vmid']
+        node = request.form.get('node')
+        vmid = request.form.get('vmid')
+        if not node or not vmid:
+            flash('Node and VMID are required.')
+            return render_template('firewall_show.html', rules=rules)
+        
         try:
             response = requests.get(f'{PROXMOX_API_URL}/nodes/{node}/qemu/{vmid}/firewall/rules', headers=HEADERS, verify=False)
+            print(response,'response')
             if response.status_code == 200:
                 rules = response.json().get('data', [])
-                print(rules)
+                print(rules,'rules')
             else:
                 flash('Failed to retrieve firewall rules.')
         except Exception as e:
             flash(f'Error: {str(e)}')
     return render_template('firewall_show.html', rules=rules)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
