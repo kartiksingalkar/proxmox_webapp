@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Firewall Rules</title>
+</head>
+<body>
+    <h1>Firewall Rules</h1>
+    <form method="POST">
+        <label for="node">Node:</label>
+        <input type="text" id="node" name="node" required><br>
+        <label for="vmid">VM ID:</label>
+        <input type="text" id="vmid" name="vmid" required><br>
+        <button type="submit">Show Rules</button>
+    </form>
+    <ul>
+        {% for rule in rules %}
+            <li>{{ rule }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/home">Back to Home</a>
+</body>
+</html>

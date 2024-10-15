@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proxmox Home</title>
+</head>
+<body>
+    <h1>Proxmox Version Information</h1>
+    {% if version %}
+        <p>Version: {{ version.version }}</p>
+        <p>Release: {{ version.release }}</p>
+    {% else %}
+        <p>No data available.</p>
+    {% endif %}
+    <nav>
+        <a href="/firewall-create">Create Firewall Rule</a> |
+        <a href="/firewall-delete">Delete Firewall Rule</a> |
+        <a href="/firewall-update">Update Firewall Rule</a> |
+        <a href="/firewall-show">Show Firewall Rules</a>
+    </nav>
+</body>
+</html>
